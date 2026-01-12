@@ -1,7 +1,7 @@
 # Retail-Performance-Dashboard
 
-![Aperçu du Dashboard](https://github.com/ton-pseudo/ton-repo/blob/main/Screenshots/Home_Store.png) 
-Figure 1 : Page *Vue Globale* présentant la synthèse des ventes et l'impact des facteurs environnementaux.
+![Aperçu du Dashboard](HOME.png) 
+Figure 1 : Page *Home* présentant la synthèse des ventes et l'impact des facteurs environnementaux.
 ***
 
 ## 📜 Contexte
@@ -37,14 +37,22 @@ Le projet utilise le dataset historique de Walmart, croisant plusieurs dimension
 ## ⚙️ Méthodologie & Formules DAX Clés
 Le projet a nécessité une modélisation précise pour isoler les variables influentes :
 
-### 1. Classement Dynamique des Magasins
-```dax
-top des magasinis = 
-RANKX(
-    ALL(Sales[Store]), 
-    [Chiffre d'affaire Hebdo], 
-    , 
-    DESC, 
-    Dense
-)
+## 🏗️ Structure du Rapport
+Le rapport est structuré en *2 pages interactives*, permettant une analyse granulaire allant de la performance globale aux spécificités de chaque point de vente.
+
+### 🖼️ Zoom sur les Pages Clés
+
+1.  *Performance Globale & Environnement :* Synthèse des indicateurs clés (Revenu Total, Nombre de Magasins) et analyse de l'impact des facteurs externes (Climat, Prix du Carburant) sur le volume d'affaires.
+2.  *Top Magasins & Détails Tactiques :* Focus sur l'excellence opérationnelle via un classement dynamique (Top N) et analyse de la performance par type de magasin et périodes de congés.
+***
+## 💡 Résultats clés & Insights
+L'analyse des données a permis de dégager des leviers d'optimisation concrets pour la stratégie commerciale de l'enseigne.
+
+* *Résilience face à l'Inflation* : Identification d'une faible élasticité des ventes par rapport au prix du carburant ; les pics de consommation (jusqu'à *$40M*) sont maintenus même en période de prix élevés.
+* *Saisonnalité & Congés* : Mise en évidence d'une corrélation directe entre les semaines IsHoliday et l'augmentation systématique du panier moyen, confirmant l'importance des promotions de vacances.
+* *Optimisation par Segment Climatique* : La prédominance du segment *"Chaud"* (plus de $6Md de CA) suggère une adaptation ciblée des stocks de produits saisonniers dans les zones à forte température.
+* *Benchmarking Interne* : Grâce au classement *RANKX, le **Store 20* est identifié comme le modèle de performance du réseau, offrant une base pour l'analyse des meilleures pratiques exportables.
+---
+> Note sur la confidentialité : Dans le cadre de ce projet d'analyse retail, toutes les données ont été traitées pour fournir une aide à la décision stratégique. Le fichier source (.pbix) présente la méthodologie de modélisation et le design des visuels.
+
 
