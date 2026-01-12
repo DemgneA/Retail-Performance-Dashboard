@@ -34,12 +34,22 @@ Le projet utilise le dataset historique de Walmart, croisant plusieurs dimension
 * *DAX (Data Analysis Expressions)* : Création de mesures complexes pour le ranking et la segmentation.
 
 ***
-## ⚙️ Méthodologie & Formules DAX Clés
-Le projet a nécessité une modélisation précise pour isoler les variables influentes :
+## ⚙️ Méthodologie & Etapes de réalisation 
+Le projet a suivi un cycle complet de traitement de la donnée, de la préparation à la visualisation finale.
+
+* *Traitement & Nettoyage (ETL) :* Utilisation de Power Query pour transformer les exports bruts, gérer les types de données et assurer la qualité de la base.
+* *Modélisation des données :*
+   *  Création d'une Table de Dates (Calendrier) personnalisée pour permettre des analyses temporelles précises.
+  *  Mise en place des relations entre les tables pour structurer le modèle de données.
+* *Calculs Statistiques (DAX) :* Écriture de mesures complexes pour extraire les indicateurs clés (Taux d'engagement, Conversion, Comparaisons MoM).
+* *Design & Visualisation :* Conception des visuels pour une expérience utilisateur harmonieuse et professionnelle.
 
 ## 🏗️ Structure du Rapport
 Le rapport est structuré en *2 pages interactives*, permettant une analyse granulaire allant de la performance globale aux spécificités de chaque point de vente.
+### 🎬 Démonstration Vidéo
 
+
+> Note : Cette animation montre la navigation fluide entre les pages et l'utilisation des filtres dynamiques.
 ### 🖼️ Zoom sur les Pages Clés
 
 1.  *Performance Globale & Environnement :* Synthèse des indicateurs clés (Revenu Total, Nombre de Magasins) et analyse de l'impact des facteurs externes (Climat, Prix du Carburant) sur le volume d'affaires.
