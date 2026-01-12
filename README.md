@@ -47,7 +47,7 @@ Le projet a suivi un cycle complet de traitement de la donnée, de la préparati
 ## 🏗️ Structure du Rapport
 Le rapport est structuré en *2 pages interactives*, permettant une analyse granulaire allant de la performance globale aux spécificités de chaque point de vente.
 ### 🎬 Démonstration Vidéo
-
+![Demo de l'interaction entre les visuels](Apercu.gif) 
 
 > Note : Cette animation montre la navigation fluide entre les pages et l'utilisation des filtres dynamiques.
 ### 🖼️ Zoom sur les Pages Clés
