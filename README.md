@@ -19,7 +19,7 @@ L'objectif principal est de fournir une vision claire au PCA sur les leviers de 
 ***
 
 ## 📂 Données
-Le projet utilise le dataset historique de Walmart, croisant plusieurs dimensions :
+Le projet utilise le dataset historique d'un chaine de super marchés, croisant plusieurs dimensions :
 
 * *Sales* : Données de ventes hebdomadaires par magasin.
 * *Features* : Facteurs externes (Météo, Fuel Price, CPI, Unemployment).
